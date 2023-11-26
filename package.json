@@ -4,8 +4,9 @@
   "version": "1.0.0",
   "author": "Aaron Qian <aq1018@gmail.com>",
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --platform=node --outfile=index.js",
-    "test": "jest ."
+    "lint": "eslint .",
+    "test": "jest .",
+    "build": "esbuild src/index.ts --bundle --platform=node --outfile=index.js"
   },
   "main": "index.js",
   "types": "index.d.ts",

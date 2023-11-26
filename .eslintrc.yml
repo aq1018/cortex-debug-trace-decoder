@@ -4,3 +4,5 @@ env:
   es6: true
 parser: '@typescript-eslint/parser'
 extends: 'standard-with-typescript'
+ignorePatterns:
+  - index.js
