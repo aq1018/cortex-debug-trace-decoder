@@ -1,3 +1,5 @@
+[![Test](https://github.com/aq1018/cortex-debug-trace-decoder/actions/workflows/test.yml/badge.svg)](https://github.com/aq1018/cortex-debug-trace-decoder/actions/workflows/test.yml)
+
 # Cortex-Debug Trace Decoder
 
 Trace Decoder is a custom advanced swo/rtt decoder for Visual Studio Code [Cortex-Debug](https://github.com/Marus/cortex-debug) extension. This decoder can parse a variety of mixed data types from the same swo/rtt channel(s) and send the parsed values to real time graphs.
