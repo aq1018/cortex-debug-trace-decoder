@@ -1,7 +1,7 @@
 {
   "name": "cortex-debug-trace-decoder",
   "description": "decodes trace data from swo/rtt for real time graphs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Aaron Qian <aq1018@gmail.com>",
   "scripts": {
     "lint": "eslint .",
