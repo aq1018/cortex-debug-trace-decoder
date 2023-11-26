@@ -9,7 +9,6 @@
     "build": "esbuild src/index.ts --bundle --platform=node --outfile=index.js"
   },
   "main": "index.js",
-  "types": "index.d.ts",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.10",
