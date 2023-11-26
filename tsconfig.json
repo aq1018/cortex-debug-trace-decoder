@@ -5,6 +5,7 @@
     "rootDir": "./src",
     "outDir": "build",
     "strict": true,
+    "declaration": true,
     "lib": [
       "es6",
       "esnext.bigint"

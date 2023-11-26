@@ -1,0 +1,10 @@
+.vscode
+node_modules
+src
+.npmignore
+.editorconfig
+.eslintrc.yml
+.gitignore
+jest.config.js
+package-lock.json
+tsconfig.json
