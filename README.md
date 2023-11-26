@@ -1,4 +1,8 @@
 [![Test](https://github.com/aq1018/cortex-debug-trace-decoder/actions/workflows/test.yml/badge.svg)](https://github.com/aq1018/cortex-debug-trace-decoder/actions/workflows/test.yml)
+[![Latest Release](https://img.shields.io/github/v/release/aq1018/cortex-debug-trace-decoder
+)](https://github.com/aq1018/cortex-debug-trace-decoder/releases/latest)
+[![GitHub release (latest by SemVer and asset)](https://img.shields.io/github/downloads/aq1018/cortex-debug-trace-decoder/latest/cortex-debug-trace-decoder.zip)](https://github.com/aq1018/cortex-debug-trace-decoder/releases/latest/download/cortex-debug-trace-decoder.zip)
+
 
 # Cortex-Debug Trace Decoder
 
@@ -6,7 +10,7 @@ Trace Decoder is a custom advanced swo/rtt decoder for Visual Studio Code [Corte
 
 ## Setup
 
-1. Download the [latest release](https://github.com/aq1018/cortex-debug-trace-decoder/releases/download/v1.0.0/cortex-debug-trace-decoder.zip)
+1. Download the [latest release](https://github.com/aq1018/cortex-debug-trace-decoder/releases/latest/download/cortex-debug-trace-decoder.zip)
 2. Unzip it to your project's `.vscode` folder
 3. copy and modify the example configuration below.
 4. modify code to send trace via swo/rtt.
