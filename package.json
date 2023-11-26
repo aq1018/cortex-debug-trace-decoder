@@ -1,6 +1,6 @@
 {
-  "name": "data-decoder",
-  "description": "Decodes debugger binary data.",
+  "name": "cortex-debug-trace-decoder",
+  "description": "decodes trace data from swo/rtt for real time graphs",
   "version": "1.0.0",
   "author": "Aaron Qian <aq1018@gmail.com>",
   "scripts": {
@@ -8,7 +8,7 @@
     "test": "jest ."
   },
   "main": "index.js",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.10",
     "@types/node": "^20.10.0",
