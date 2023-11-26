@@ -4,6 +4,32 @@
 
 Trace Decoder is a custom advanced swo/rtt decoder for Visual Studio Code [Cortex-Debug](https://github.com/Marus/cortex-debug) extension. This decoder can parse a variety of mixed data types from the same swo/rtt channel(s) and send the parsed values to real time graphs.
 
+## Setup
+
+1. Download the [latest release](https://github.com/aq1018/cortex-debug-trace-decoder/releases/download/v1.0.0/cortex-debug-trace-decoder.zip)
+2. Unzip it to your project's `.vscode` folder
+3. copy and modify the example configuration below.
+4. modify code to send trace via swo/rtt.
+
+## Important Note
+
+There is an issue on [cortex-debug](https://github.com/Marus/cortex-debug) that prevents data from showing on graph. I have file a [pull request](https://github.com/Marus/cortex-debug/pull/961) to fix the issue. So until it is merged and release, you might not see anything on the graph.
+
+If you don't want to wait, you can download [my fork](https://github.com/aq1018/cortex-debug) and build the extension yourself. See instruction below:
+
+```bash
+git clone https://github.com/aq1018/cortex-debug.git
+cd cortex-debug
+npm install
+# builds the extension as cortex-debug-{version}.vsix
+npm run package
+# install the extension
+code code --install-extension cortex-debug-{version}.vsix
+```
+
+Don't forget to restart / reload VSCode after this.
+
+
 ## Example Configuration
 
 Here is a sample configration for `rttConfig.decoders` portion.
@@ -15,8 +41,8 @@ Here is a sample configration for `rttConfig.decoders` portion.
   // change this to where you downloaded the decoder file.
   "decoder": "${workspaceRoot}/.vscode/cortex-debug-trace-decoder/index.js",
 
-  // listen to rtt / swo port 1 and 2.
-  "ports": [1, 2],
+  // listen to rtt / swo port 1.
+  "ports": [1],
 
   "config": {
     "label": "motor-controller",
@@ -39,20 +65,6 @@ Here is a sample configration for `rttConfig.decoders` portion.
             // 32 bit float, little endian
             "primitive": "f32l",
             "graphId": "motor_current",
-          },
-        ]
-      },
-      {
-        // configure traces for rtt / swo port 2
-        "port": 2,
-        "traces": [
-          {
-            "primitive": "u16l",
-            "graphId": "TIM1_count",
-          },
-          {
-            "primitive": "u16l",
-            "graphId": "TIM2_count",
           },
         ]
       }
